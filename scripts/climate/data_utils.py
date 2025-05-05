@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 
+
 @st.cache_data
 def load_climate_data(file_path="data/yearly_climate_nepal.csv"):
     try:
@@ -19,3 +20,5 @@ df = load_climate_data()
 # check_null_values(df)
 # df_cleaned = handle_null_values(df, strategy='mean')
 # general_summary_statistics(df_cleaned)
+
+
