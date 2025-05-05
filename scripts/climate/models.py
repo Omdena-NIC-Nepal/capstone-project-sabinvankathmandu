@@ -67,3 +67,9 @@ def evaluate_model(model, X_train, y_train, X_test, y_test):
         "y_pred_test": y_pred_test,
     }
     return metrics
+
+
+# Save Model
+def save_model(model, file_name='../model/climate_model.pkl'):
+    with open(file_name, 'wb') as file:
+        pickle.dump(model, file)
