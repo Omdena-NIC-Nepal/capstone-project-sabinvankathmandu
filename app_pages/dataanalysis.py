@@ -6,7 +6,6 @@ sys.path.append(
     "C:/My Computer/D DRIVE/Omdena/assignment/capstoneproject/capstone-project-sabinvankathmandu"
 )
 
-
 def show(df):
     st.header(":blue[Data General Analysis]")
     st.subheader(
