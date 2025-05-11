@@ -53,16 +53,16 @@ This Streamlit application provides a comprehensive platform for analyzing clima
    	streamlit run app.py
 
 ## 🧠 Models Used
-### 🔎 NER: spaCy
+ 🔎 NER: spaCy
 
-### 📄 Summarization: facebook/bart-large-cnn
+ 📄 Summarization: facebook/bart-large-cnn
 
-### 😊 Sentiment: distilbert-base-uncased-finetuned-sst-2-english via HuggingFace Transformers
+ 😊 Sentiment: distilbert-base-uncased-finetuned-sst-2-english via HuggingFace Transformers
 
-# ✍️ Author
-## Sabin Bajracharya
-## 📍 Kathmandu → Amsterdam
-## 🎓 MSc IT | 🌱 Omdena Climate Capstone Fellow
+## ✍️ Author
+ Sabin Bajracharya
+ 📍 Kathmandu → Amsterdam
+🎓 MSc IT | 🌱 Omdena Climate Capstone Fellow
 
 
 nepal-climate-nlp/
