@@ -71,12 +71,12 @@ def evaluate_model(model, X_train, y_train, X_test, y_test):
 
 
 # Save Model
-def save_model(model, file_name='../model/climate_model.pkl'):
+def save_model(model, file_name='model/climate_model.pkl'):
     with open(file_name, 'wb') as file:
         pickle.dump(model, file)
 
 # Load Model
-def load_model(file_name='../model/climate_model.pkl'):
+def load_model(file_name='model/climate_model.pkl'):
     try:
         with open(file_name, 'rb') as file:
             return pickle.load(file)

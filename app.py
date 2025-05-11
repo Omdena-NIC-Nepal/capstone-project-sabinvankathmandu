@@ -26,7 +26,7 @@ with tab1:
 with tab2:
     data_exploratoins.show(df)
 with tab3:
-    st.write("Tab3")
+    train_model.show(df)
 with tab4:
     st.write("Tab4")
 
