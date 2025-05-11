@@ -1,3 +1,4 @@
+
 import streamlit as st
 import sys
 from app_pages import data_exploratoins, dataanalysis, train_model, prediction
@@ -6,12 +7,15 @@ from app_pages.gis import overview, spatial_eda
 from app_pages.nlp import ner
 from transformers import pipeline
 
-# Load the sentiment analysis model
-sentiment_analyzer = pipeline("sentiment-analysis")
+
+# summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+
 
 st.set_page_config(page_title="Sabin Nepal Climate Analysis", page_icon="🌱", layout="wide")
 st.title("Nepal Climate Trend Analysis and Predictions")
 st.markdown("We analyse Nepal's climatic data and predict future trends.")
+
+
 
 df = load_climate_data()
 
@@ -83,24 +87,10 @@ elif nlp_menu == "NER Prediction":
 
 elif nlp_menu == "Sentiment Analysis":
     st.title("😊 Sentiment Analysis")
-
-    # Text input for sentiment analysis
     text = st.text_area("Enter text for sentiment analysis")
+    if text:
+        st.write("Sentiment: Positive")  # Replace with model output
 
-    if st.button("Analyze Sentiment"):
-        if text:
-            # Run sentiment analysis
-            sentiment = sentiment_analyzer(text)
-
-            # Display the sentiment results
-            st.subheader("Sentiment Results:")
-            for result in sentiment:
-                label = result['label']
-                score = result['score']
-                st.write(f"**Sentiment:** {label}")
-                st.write(f"**Confidence Score:** {score:.2f}")
-        else:
-            st.warning("Please enter some text for sentiment analysis.")
 
 # ------------------------------------------
 #          MAIN SECTION (Climate/GIS)
@@ -122,7 +112,12 @@ elif main_menu == "🌍 Climate":
 
 elif main_menu == "🌎 GIS":
     st.title("🗺️ GIS Data Analysis for Nepal")
-    tab1, tab2, tab3, tab4 = st.tabs([ "📋 Overview", "🌍 Spatial EDA", "🌐 Raster/Vector Data", "🗺️ Interactive Maps"])
+    tab1, tab2, tab3, tab4 = st.tabs([
+        "📋 Overview",
+        "🌍 Spatial EDA",
+        "🌐 Raster/Vector Data",
+        "🗺️ Interactive Maps"
+    ])
     with tab1:
         overview.show()
     with tab2:

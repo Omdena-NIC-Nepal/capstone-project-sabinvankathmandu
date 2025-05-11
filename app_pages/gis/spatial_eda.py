@@ -41,3 +41,5 @@ def check_basic_info(gdf):
     st.write(gdf.geometry.astype(str))
     st.write("🔹 Null values in each column:")
     st.write(gdf.isnull().sum())
+
+# Visualizations

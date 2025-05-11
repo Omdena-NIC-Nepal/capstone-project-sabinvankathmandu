@@ -1,3 +1,14 @@
 numpy
 pandas
-steramlit
+streamlit
+torch
+transformers
+spacy
+matplotlib
+geopandas
+numpy
+fiona
+rasterio
+seaborn
+tf-keras
+hf_xet
