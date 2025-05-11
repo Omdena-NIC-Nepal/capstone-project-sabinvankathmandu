@@ -1,13 +1,10 @@
-streamlit
 pandas
-geopandas
 scikit-learn
 seaborn
 plotly
 geoplot
 folium
 pydeck
-torch
 transformers
 matplotlib
 geopandas
@@ -17,8 +14,9 @@ rasterio
 tf-keras
 hf_xet
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-numpy
-spacy
-thinc
 cython
-
+numpy==1.24.3      # Compatible with torch 2.1.0
+torch==2.1.0       # Update to the latest stable release
+spacy==3.6.0       # Ensure this version is compatible with torch and numpy
+thinc==8.1.0       # Ensure compatibility with spacy version
+streamlit==1.16.0  # Ensure this is the version you're using
