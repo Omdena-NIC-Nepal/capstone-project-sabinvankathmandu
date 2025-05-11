@@ -1,5 +1,12 @@
-pandas
-streamlit
+streamlit==1.44.1
+pandas==2.2.3
+geopandas==1.0.1
+scikit-learn==1.6.1
+seaborn==0.13.2
+plotly==6.0.1
+geoplot==0.5.1
+folium==0.14.0
+pydeck==0.8.0
 torch
 transformers
 matplotlib
@@ -7,10 +14,8 @@ geopandas
 numpy
 fiona
 rasterio
-seaborn
 tf-keras
 hf_xet
-scikit-learn
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 numpy==1.24.4
 spacy==3.7.2
