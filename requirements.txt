@@ -12,3 +12,5 @@ rasterio
 seaborn
 tf-keras
 hf_xet
+scikit-learn
+sklearn
