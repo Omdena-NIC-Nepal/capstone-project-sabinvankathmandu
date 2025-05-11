@@ -25,6 +25,12 @@ This Streamlit application provides a comprehensive platform for analyzing clima
 
 ---
 
+## Streamlit application link
+0. Link to the Sabin Capstone project
+
+https://capstone-project-sabin.streamlit.app/
+
+
 ## 🛠️ Installation
 
 1. Clone the repository:
