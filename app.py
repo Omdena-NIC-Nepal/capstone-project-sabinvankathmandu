@@ -2,7 +2,7 @@ import streamlit as st
 import sys
 from app_pages import data_exploratoins, dataanalysis, train_model, prediction
 from scripts.climate.data_utils import load_climate_data
-from app_pages.gis import overview, spatial_eda
+from app_pages.gis import overview, spatial_eda, rastar_vector_data, visualization
 from app_pages.nlp import ner
 from transformers import pipeline
 
@@ -14,6 +14,7 @@ st.title("Nepal Climate Trend Analysis and Predictions")
 st.markdown("We analyse Nepal's climatic data and predict future trends.")
 
 df = load_climate_data()
+gdf = spatial_eda.load_vector()
 
 # === SIDEBAR ===
 st.sidebar.title("Main Navigation")
@@ -122,15 +123,17 @@ elif main_menu == "🌍 Climate":
 
 elif main_menu == "🌎 GIS":
     st.title("🗺️ GIS Data Analysis for Nepal")
-    tab1, tab2, tab3, tab4 = st.tabs([ "📋 Overview", "🌍 Spatial EDA", "🌐 Raster/Vector Data", "🗺️ Interactive Maps"])
+    tab1, tab2, tab3, tab4 = st.tabs([ "📋 Overview", "🌍 Spatial EDA", "🌐 Raster/Vector Data", "🗺️ Visualization"])
     with tab1:
         overview.show()
     with tab2:
         spatial_eda.check_basic_info(spatial_eda.load_vector())
     with tab3:
-        st.header("Raster/Vector Data coming soon...")
+        rastar_vector_data.nepal_GIS(gdf)
+        rastar_vector_data.visualize_raster_data()
     with tab4:
-        st.header("Interactive Map coming soon...")
+        visualization.plot_monthly_trend()
+
 
 elif main_menu == "🌦️ Weather":
     st.title("🌦️ Real-time Weather Info")
