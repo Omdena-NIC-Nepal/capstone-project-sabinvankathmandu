@@ -1,9 +1,7 @@
-numpy
 pandas
 streamlit
 torch
 transformers
-spacy
 matplotlib
 geopandas
 numpy
@@ -14,3 +12,6 @@ tf-keras
 hf_xet
 scikit-learn
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+numpy==1.24.4
+spacy==3.7.2
+thinc==8.2.2
