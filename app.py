@@ -28,7 +28,7 @@ with tab2:
 with tab3:
     train_model.show(df)
 with tab4:
-    st.write("Tab4")
+    prediction.show(df)
 
-if st.button("Predict Temperature"):
-    st.write("We will predict temperature in a moment")
+# if st.button("Predict Temperature"):
+#     st.write("We will predict temperature in a moment")
