@@ -24,7 +24,7 @@ if menu == "🌍 Climate":
 with tab1:
     dataanalysis.show(df)
 with tab2:
-    st.write("Tab2")
+    data_exploratoins.show(df)
 with tab3:
     st.write("Tab3")
 with tab4:
