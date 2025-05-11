@@ -29,9 +29,40 @@ This Streamlit application provides a comprehensive platform for analyzing clima
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/nepal-climate-nlp.git
-   cd nepal-climate-nlp
+   git clone git@github.com:Omdena-NIC-Nepal/capstone-project-sabinvankathmandu.git
+   cd capstone-project-sabinvankathmandu.git
 
+
+## 🛠️ Virtual Environment
+
+2. Create and activate a virtual environment (optional but recommended):
+   ```bash
+   	python -m venv venv
+	source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+## 🛠️ Dependencies
+
+3. Install the dependencies:
+   ```bash
+   	pip install -r requirements.txt
+
+## 🛠️ Apploication
+
+4. Run the Application
+   ```bash
+   	streamlit run app.py
+
+## 🧠 Models Used
+### 🔎 NER: spaCy
+
+### 📄 Summarization: facebook/bart-large-cnn
+
+### 😊 Sentiment: distilbert-base-uncased-finetuned-sst-2-english via HuggingFace Transformers
+
+# ✍️ Author
+## Sabin Bajracharya
+## 📍 Kathmandu → Amsterdam
+## 🎓 MSc IT | 🌱 Omdena Climate Capstone Fellow
 
 
 nepal-climate-nlp/
