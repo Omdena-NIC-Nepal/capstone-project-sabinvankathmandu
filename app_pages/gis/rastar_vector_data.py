@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import rasterio
 import numpy as np
 from rasterio.mask import mask
-import fiona
 import seaborn as sns
 
 sys.path.append(
