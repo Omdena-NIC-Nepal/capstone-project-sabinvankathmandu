@@ -14,8 +14,8 @@ def show(df):
     )
     st.dataframe(df)
 
-    st.subheader("Check for null values", divider="blue")
-    st.write(check_null_values(df))
+    # st.subheader("Check for null values", divider="blue")
+    # st.write(check_null_values(df))
     st.subheader("Data after cleaning", divider="blue")
     st.write(handle_null_values(df))
     st.subheader("General Summary statistics", divider="blue")
