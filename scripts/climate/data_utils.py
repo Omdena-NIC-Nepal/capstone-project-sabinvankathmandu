@@ -3,7 +3,7 @@ import streamlit as st
 
 
 @st.cache_data
-def load_climate_data(file_path="data/yearly_climate_nepal.csv"):
+def load_climate_data(file_path="data/yearly_climate_nepal1.csv"):
     try:
         df = pd.read_csv(file_path)
         print("Data loaded successfully.")
