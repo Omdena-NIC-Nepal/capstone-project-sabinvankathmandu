@@ -7,7 +7,8 @@ from app_pages.gis import overview, spatial_eda, rastar_vector_data, visualizati
 from transformers import pipeline
 
 # Load the sentiment analysis model
-sentiment_analyzer = pipeline("sentiment-analysis")
+# sentiment_analyzer = pipeline("sentiment-analysis")
+pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english").save_pretrained("./models/sentiment")
 
 st.set_page_config(page_title="Sabin Nepal Climate Analysis", page_icon="🌱", layout="wide")
 st.title("Nepal Climate Trend Analysis and Predictions")
