@@ -49,6 +49,8 @@ nltk==3.9.1
 plotly==5.22.0
 geopandas==0.14.4
 rasterio==1.3.9
+transformers
+
 
 # Download and install spaCy English model
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
