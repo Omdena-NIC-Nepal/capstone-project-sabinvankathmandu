@@ -1,60 +1,81 @@
-# pandas
-# scikit-learn
-# seaborn
-# plotly
-# geoplot
-# folium
-# pydeck
-# transformers
-# matplotlib
-# geopandas
-# numpy
-# fiona
-# rasterio
-# tf-keras
-# hf_xet
-# https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-# cython
-# numpy==1.24.3      # Compatible with torch 2.1.0
-# torch==2.1.0       # Update to the latest stable release
-# spacy==3.6.0       # Ensure this version is compatible with torch and numpy
-# thinc==8.1.0       # Ensure compatibility with spacy version
-# streamlit==1.16.0  # Ensure this is the version you're using
+# # pandas
+# # scikit-learn
+# # seaborn
+# # plotly
+# # geoplot
+# # folium
+# # pydeck
+# # transformers
+# # matplotlib
+# # geopandas
+# # numpy
+# # fiona
+# # rasterio
+# # tf-keras
+# # hf_xet
+# # https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+# # cython
+# # numpy==1.24.3      # Compatible with torch 2.1.0
+# # torch==2.1.0       # Update to the latest stable release
+# # spacy==3.6.0       # Ensure this version is compatible with torch and numpy
+# # thinc==8.1.0       # Ensure compatibility with spacy version
+# # streamlit==1.16.0  # Ensure this is the version you're using
 
-# streamlit
-# pandas
-# numpy
+# # streamlit
+# # pandas
+# # numpy
+# # scikit-learn==1.5.1
+# # matplotlib
+# # seaborn
+# # spacy
+# # joblib
+# # textblob==0.19.0
+# # nltk==3.9.1
+# # plotly
+# # geopandas
+# # https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+# # rasterio
+
+# streamlit==1.34.0
+# pandas==2.2.2
+# numpy==1.26.4
 # scikit-learn==1.5.1
-# matplotlib
-# seaborn
-# spacy
-# joblib
+# matplotlib==3.8.4
+# seaborn==0.13.2
+# spacy==3.7.4
+# joblib==1.4.2
 # textblob==0.19.0
 # nltk==3.9.1
-# plotly
-# geopandas
-# https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-# rasterio
+# plotly==5.22.0
+# geopandas==0.14.4
+# rasterio==1.3.9
+# transformers
+# protobuf==3.19.6
 
-streamlit==1.34.0
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.5.1
-matplotlib==3.8.4
-seaborn==0.13.2
-spacy==3.7.4
-joblib==1.4.2
-textblob==0.19.0
-nltk==3.9.1
-plotly==5.22.0
-geopandas==0.14.4
-rasterio==1.3.9
-transformers
-protobuf==3.19.6
+# tensorflow==2.11.0
+# torch==2.0.0
 
-tensorflow==2.11.0
-torch==2.0.0
+# # Download and install spaCy English model
+# en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
 
-# Download and install spaCy English model
+
+# Core Libraries
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Geospatial
+geopandas
+
+# Visualization
+streamlit
+plotly
+
+# NLP (lite)
+spacy>=3.7.0
+nltk
+
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
 
