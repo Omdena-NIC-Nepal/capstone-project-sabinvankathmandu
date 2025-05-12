@@ -3,7 +3,7 @@ import sys
 from app_pages import data_exploratoins, dataanalysis, train_model, prediction
 from scripts.climate.data_utils import load_climate_data
 from app_pages.gis import overview, spatial_eda, rastar_vector_data, visualization
-from app_pages.nlp import ner
+# from app_pages.nlp import ner
 from transformers import pipeline
 
 # Load the sentiment analysis model
@@ -68,19 +68,19 @@ elif nlp_menu == "NER Prediction":
 
     text = st.text_area("Enter text for NER tagging")
 
-    if st.button("Run NER"):
-        if text:
-            entities = ner.english_ner(text)
+    # if st.button("Run NER"):
+    #     if text:
+    #         entities = ner.english_ner(text)
 
-            if entities:
-                st.write("Entities Found:")
-                for word, label in entities:
-                    st.markdown(f"- **{word}** → {label}")
-            else:
-                st.info("No named entities found.")
+    #         if entities:
+    #             st.write("Entities Found:")
+    #             for word, label in entities:
+    #                 st.markdown(f"- **{word}** → {label}")
+    #         else:
+    #             st.info("No named entities found.")
 
-        else:
-            st.warning("Please enter some text...")
+    #     else:
+    #         st.warning("Please enter some text...")
 
 elif nlp_menu == "Sentiment Analysis":
     st.title("😊 Sentiment Analysis")
