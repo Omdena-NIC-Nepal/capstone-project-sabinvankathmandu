@@ -65,6 +65,7 @@ pandas
 scikit-learn
 matplotlib
 seaborn
+rasterio
 
 # Geospatial
 geopandas
