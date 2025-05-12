@@ -4,11 +4,11 @@ from app_pages import data_exploratoins, dataanalysis, train_model, prediction
 from scripts.climate.data_utils import load_climate_data
 from app_pages.gis import overview, spatial_eda, rastar_vector_data, visualization
 # from app_pages.nlp import ner
-from transformers import pipeline
+# from transformers import pipeline
 
 # Load the sentiment analysis model
 # sentiment_analyzer = pipeline("sentiment-analysis")
-pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english").save_pretrained("./models/sentiment")
+# pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english").save_pretrained("./models/sentiment")
 
 st.set_page_config(page_title="Sabin Nepal Climate Analysis", page_icon="🌱", layout="wide")
 st.title("Nepal Climate Trend Analysis and Predictions")
@@ -89,20 +89,20 @@ elif nlp_menu == "Sentiment Analysis":
     # Text input for sentiment analysis
     text = st.text_area("Enter text for sentiment analysis")
 
-    if st.button("Analyze Sentiment"):
-        if text:
-            # Run sentiment analysis
-            sentiment = sentiment_analyzer(text)
+    # if st.button("Analyze Sentiment"):
+    #     if text:
+    #         # Run sentiment analysis
+    #         sentiment = sentiment_analyzer(text)
 
-            # Display the sentiment results
-            st.subheader("Sentiment Results:")
-            for result in sentiment:
-                label = result['label']
-                score = result['score']
-                st.write(f"**Sentiment:** {label}")
-                st.write(f"**Confidence Score:** {score:.2f}")
-        else:
-            st.warning("Please enter some text for sentiment analysis.")
+    #         # Display the sentiment results
+    #         st.subheader("Sentiment Results:")
+    #         for result in sentiment:
+    #             label = result['label']
+    #             score = result['score']
+    #             st.write(f"**Sentiment:** {label}")
+    #             st.write(f"**Confidence Score:** {score:.2f}")
+    #     else:
+    #         st.warning("Please enter some text for sentiment analysis.")
 
 # ------------------------------------------
 #          MAIN SECTION (Climate/GIS)
