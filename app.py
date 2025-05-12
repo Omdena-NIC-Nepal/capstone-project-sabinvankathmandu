@@ -19,7 +19,7 @@ gdf = spatial_eda.load_vector()
 
 # === SIDEBAR ===
 st.sidebar.title("Main Navigation")
-main_menu = st.sidebar.radio("Go to", ["🌍 Climate", "🌎 GIS", "🌦️ Weather"])
+main_menu = st.sidebar.radio("Go to", ["🌍 Climate", "🌎 GIS"])
 
 st.sidebar.markdown("---")
 st.sidebar.title("🗣️ NLP Toolkit")
@@ -136,6 +136,3 @@ elif main_menu == "🌎 GIS":
         visualization.plot_monthly_trend()
 
 
-elif main_menu == "🌦️ Weather":
-    st.title("🌦️ Real-time Weather Info")
-    st.info("Weather dashboard coming soon...")
