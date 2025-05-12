@@ -1,22 +1,36 @@
+# pandas
+# scikit-learn
+# seaborn
+# plotly
+# geoplot
+# folium
+# pydeck
+# transformers
+# matplotlib
+# geopandas
+# numpy
+# fiona
+# rasterio
+# tf-keras
+# hf_xet
+# https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+# cython
+# numpy==1.24.3      # Compatible with torch 2.1.0
+# torch==2.1.0       # Update to the latest stable release
+# spacy==3.6.0       # Ensure this version is compatible with torch and numpy
+# thinc==8.1.0       # Ensure compatibility with spacy version
+# streamlit==1.16.0  # Ensure this is the version you're using
+
+streamlit
 pandas
-scikit-learn
-seaborn
-plotly
-geoplot
-folium
-pydeck
-transformers
-matplotlib
-geopandas
 numpy
-fiona
-rasterio
-tf-keras
-hf_xet
+scikit-learn==1.5.1
+matplotlib
+seaborn
+spacy
+joblib
+textblob==0.19.0
+nltk==3.9.1
+plotly
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-cython
-numpy==1.24.3      # Compatible with torch 2.1.0
-torch==2.1.0       # Update to the latest stable release
-spacy==3.6.0       # Ensure this version is compatible with torch and numpy
-thinc==8.1.0       # Ensure compatibility with spacy version
-streamlit==1.16.0  # Ensure this is the version you're using
+
